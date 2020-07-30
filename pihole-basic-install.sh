@@ -13,7 +13,7 @@ sudo ./configure
 sudo make 
 sudo make install
 cd ~/openstack-pihole-automated-install
-sudo cp lighttpd.conf /etc/lighttpd
+sudo cp lighttpd.service /etc/systemd/system/lighttpd.service
 sudo systemctl daemon-reload
 sudo systemctl enable lighttpd
 sudo mkdir -p /srv/www
