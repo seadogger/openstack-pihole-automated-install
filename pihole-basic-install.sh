@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo setenforce 0
+sudo cp config /etc/selinux/
 sudo dnf module enable php:remi-7.4 -y
 sudo dnf install php php-cli php-common php-json php-xml php-mbstring php-mysqli php-zip php-intl -y
 sudo dnf install -y autoconf make automake libtool pcre-devel  zlib-devel bzip2-devel git
