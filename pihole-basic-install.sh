@@ -30,7 +30,7 @@ sudo systemctl start lighttpd
 sudo systemctl status lighttpd
 cd ~
 sudo git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
-sudo cd "Pi-hole/automated install/"
+sudo cd Pi-hole/automated\ install/
 sudo sed -i "s/lighttpd\slighttpd-fastcgi//" basic-install.sh
 sudo chmod +x basic-install.sh
 sudo ./basic-install.sh
