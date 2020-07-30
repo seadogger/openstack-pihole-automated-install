@@ -12,12 +12,14 @@ sudo ./autogen.sh && ./configure --disable-dependency-tracking
 sudo ./configure
 sudo make 
 sudo make install
+cd ~/openstack-pihole-automated-install
 sudo cp lighttpd.conf /etc/lighttpd/
 sudo systemctl daemon-reload
 sudo systemctl enable lighttpd
 sudo mkdir -p /srv/www
 sudo mkdir -p /etc/lighttpd/conf.d
 sudo mkdir /etc/lighttpd/vhosts.d
+cd ~/lighttpd1.4/
 sudo cp doc/config/*.conf /etc/lighttpd/
 sudo cp doc/config/conf.d/*.conf /etc/lighttpd/conf.d
 sudo groupadd lighttpd
