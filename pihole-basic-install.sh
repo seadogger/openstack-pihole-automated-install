@@ -13,7 +13,7 @@ sudo ./configure
 sudo make 
 sudo make install
 cd ~/openstack-pihole-automated-install
-sudo cp lighttpd.conf /etc/lighttpd/
+sudo cp lighttpd.conf /etc/lighttpd
 sudo systemctl daemon-reload
 sudo systemctl enable lighttpd
 sudo mkdir -p /srv/www
@@ -29,8 +29,8 @@ sudo chown lighttpd: /var/log/lighttpd
 sudo systemctl start lighttpd
 sudo systemctl status lighttpd
 cd ~
-sudo git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
-sudo cd ~/Pi-hole/automated\ install/
+sudo git clone https://github.com/pi-hole/pi-hole.git
+sudo cd ~/pi-hole/automated\ install/
 sudo sed -i "s/lighttpd\slighttpd-fastcgi//" basic-install.sh
 sudo chmod +x basic-install.sh
 sudo ./basic-install.sh
