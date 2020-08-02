@@ -1,23 +1,32 @@
 # openstack-pihole-automated-install
 Bash scripts to automate the install of PiHole on an Openstack CentOS 8 Cloud Image
 
-Need to get a Minimal CentOS 8 Cloud Image instance installed and running on your openstack server
+Need to get a Minimal CentOS 8 Cloud Image instance installed and running on your openstack server and this will not be covered here as there are several tutorials to get this accomplished
 
-Log in image
+Log into the CentOS image you create and get to a command prompt
 
-Install Git
+Install Git:
+```
 sudo dnf install git
+```
 
-Clone this repo 
+Clone the scripts from the Git Repo repo: 
+```
 sudo git clone https://github.com/seadogger/openstack-pihole-automated-install.git
+```
 
-CD into directory, set script as executable, and run script
+Change into the script directory, set script as executable, and run script:
+```
 cd openstack-pihole-automated-install
 sudo chmod 755 pihole-basic-install.sh
 sudo ./pihole-basic-install.sh
+```
 
-You should be presented with the PiHole Installer
-You can tailor your downstream DNS server but the defaults should work out of the box
-Make sure you record your password to log into the console
+You will have to continue once through the script by pressing the "q" key.  Before hitting the "q" key however verify the lighttp service is up and running correctly
+
+When the scripts completes you will prompted through several PiHole installation menus.  You can pretty much accept ever setting as default and have a working PiHole installation however you can tailor the DNS server.
+
+At the end of the installation make sure to record the default password that was created during the installation so you can log into the PiHole Admin console.  Installation is finished and you can now use the PiHole admin console to configuration block lists and configure unique parameters of your installation.
+
 
 
