@@ -30,5 +30,7 @@ When the scripts completes you will prompted through several PiHole installation
 
 At the end of the installation make sure to record the default password that was created during the installation so you can log into the PiHole Admin console.  Installation is finished and you can now use the PiHole admin console to configuration block lists and configure unique parameters of your installation.
 
+This script was developed from the information in this [article](https://rootdicalism.wordpress.com/2020/01/24/pi-hole-installation-on-centos-8-part-3/) and tailored for an Openstack Cloud Image
+
 
 
