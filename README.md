@@ -24,6 +24,8 @@ sudo ./pihole-basic-install.sh
 
 You will have to continue once through the script by pressing the "q" key.  Before hitting the "q" key however verify the lighttp service is up and running correctly
 
+![Verify Lighttp Service is Active](lighttp_status.png)
+
 When the scripts completes you will prompted through several PiHole installation menus.  You can pretty much accept ever setting as default and have a working PiHole installation however you can tailor the DNS server.
 
 At the end of the installation make sure to record the default password that was created during the installation so you can log into the PiHole Admin console.  Installation is finished and you can now use the PiHole admin console to configuration block lists and configure unique parameters of your installation.
