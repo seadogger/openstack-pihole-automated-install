@@ -3,7 +3,7 @@ Bash scripts to automate the install of PiHole on an Openstack CentOS 8 Cloud Im
 
 Need to get a Minimal CentOS 8 Cloud Image instance installed and running on your openstack server and this will not be covered here as there are several tutorials to get this accomplished
 
-Log into the CentOS image you create and get to a command prompt
+Log into the CentOS image you created and get to a command prompt
 
 Install Git:
 ```
